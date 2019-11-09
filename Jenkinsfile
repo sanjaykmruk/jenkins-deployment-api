@@ -8,13 +8,8 @@ node {
       scmVars = checkout scm
 
       // Run Build
-      sh git pull
+      sh 'git pull'
       sh 'mvn clean install'
     }
-
-    stage('Deploy') {
-
-       
-      }
    }
 }
