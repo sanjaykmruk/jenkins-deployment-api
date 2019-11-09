@@ -8,6 +8,7 @@ node {
       scmVars = checkout scm
 
       // Run Build
+      sh git pull
       sh 'mvn clean install'
     }
 
